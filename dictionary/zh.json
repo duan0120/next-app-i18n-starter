@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "title": "DevUtils"
+  },
+  "Footer": {
+    "copyright": "DevUtils 保留所有权利",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "description": "DevUtils 是一个开发者工具集合，它是免费的、开源的。它使用 Next.js、Tailwind CSS 和 TypeScript 构建。",
+    "FrendlyLinks": "友好链接"
+  },
+  "Metadata": {
+    "title": "DevUtils",
+    "description": "All-in-one tools for developers",
+    "keywords": "DevUtils, tools, developer, utility, productivity"
+  }
+}
