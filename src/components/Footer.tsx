@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex justify-between px-4 py-4">
         <div className="w-full max-w-52 lg:max-w-96">
           <div className="flex items-center gap-x-2 cursor-pointer">
-            <Image src="/imgs/logo.svg" alt="logo" width={32} height={32}  className="h-8" />
+            <Image src="/imgs/logo.svg" alt="logo" width={32} height={32} className="h-8" />
             <h1 className="text-xl font-bold">{t("title")}</h1>
           </div>
           <div className="flex flex-wrap mt-6">
@@ -38,7 +38,7 @@ export default function Footer() {
               <Link href="https://www.memora.top">Memora</Link>
             </li>
             <li className="mt-2">
-              <Link href="https://blog.crazykids.tech">CrazyKids</Link>
+              <Link href="https://www.crazykids.tech">CrazyKids</Link>
             </li>
           </ul>
         </div>
