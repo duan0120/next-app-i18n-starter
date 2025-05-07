@@ -35,10 +35,10 @@ export default function Footer() {
           <p className="mb-6 font-bold">{f("FrendlyLinks")}</p>
           <ul className="mb-4">
             <li className="mt-2">
-              <Link href="https://www.memora.top">Memora</Link>
+              <Link href="https://www.memora.top" target="_blank">Memora</Link>
             </li>
             <li className="mt-2">
-              <Link href="https://www.crazykids.tech">CrazyKids</Link>
+              <Link href="https://www.crazykids.tech" target="_blank">CrazyKids</Link>
             </li>
           </ul>
         </div>
