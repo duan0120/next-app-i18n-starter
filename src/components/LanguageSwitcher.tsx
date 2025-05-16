@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { useRouter, usePathname } from 'next/navigation';
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -51,7 +51,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <DropdownMenu dir={currentLanguage === "ar" ? "rtl" : "ltr"}>
+    <DropdownMenu dir="ltr">
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm">
           {languageLabels[currentLanguage as keyof typeof languageLabels]}

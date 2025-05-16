@@ -54,7 +54,7 @@ export default async function RootLayout({
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://www.devutils.top/en"
+          href="https://www.devutils.top"
         />
         <link
           rel="alternate"
@@ -63,6 +63,7 @@ export default async function RootLayout({
         />
         <meta name="keywords" content={t("keywords")} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow"></meta>
         <script
           {...jsonLdScriptProps<WebSite>({
             "@context": "https://schema.org",
@@ -110,6 +111,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const o = await getTranslations({ locale, namespace: "OrgCard" });
 
   return {
     title: t("title"),
@@ -119,8 +121,8 @@ export async function generateMetadata({
       "google-site-verification": "********",
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
+      title: o("title"),
+      description: o("description"),
       url: `https://www.devutils.top`,
       siteName: "DevUtils",
       images: [
@@ -135,14 +137,14 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
+      title: o("title"),
+      description: o("description"),
       images: ["https://www.devutils.top/og-image.png"],
     },
     alternates: {
       canonical: `https://www.devutils.top`,
       languages: {
-        en: "https://www.devutils.top/en",
+        en: "https://www.devutils.top",
         zh: "https://www.devutils.top/zh",
       },
     },

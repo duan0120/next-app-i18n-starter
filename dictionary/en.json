@@ -7,11 +7,17 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "description": "DevUtils is a collection of tools for developers. It is a free and open-source project. It is built with Next.js, Tailwind CSS, and TypeScript.",
-    "FrendlyLinks": "Frendly Links"
+    "FrendlyLinks": "Frendly Links",
+    "contact": "Contact",
+    "about": "About"
   },
   "Metadata": {
     "title": "DevUtils",
     "description": "All-in-one tools for developers",
     "keywords": "DevUtils, tools, developer, utility, productivity"
+  },
+  "OrgCard": {
+    "title": "DevUtils",
+    "description": "DevUtils, tools, developer, utility, productivity"
   }
 }

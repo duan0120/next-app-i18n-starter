@@ -9,9 +9,9 @@ export default function Footer() {
     <footer className="container mx-auto px-4 border-t">
       <div className="flex justify-between px-4 py-4">
         <div className="w-full max-w-52 lg:max-w-96">
-          <div className="flex items-center gap-x-2 cursor-pointer">
+          <div className="flex items-center gap-x-2">
             <Image src="/imgs/logo.svg" alt="logo" width={32} height={32} className="h-8" />
-            <h1 className="text-xl font-bold">{t("title")}</h1>
+            <h2 className="text-xl font-bold">{t("title")}</h2>
           </div>
           <div className="flex flex-wrap mt-6">
             {f("description")}
@@ -32,13 +32,27 @@ export default function Footer() {
           </div>
         </div>
         <div>
+          <p className="mb-6 font-bold">{f("about")}</p>
+          <ul className="mb-4">
+            <li className="mt-2">
+              <Link className="text-blue-500 hover:underline" href="/privacy">{f("privacy")}</Link>
+            </li>
+            <li className="mt-2">
+              <Link className="text-blue-500 hover:underline" href="/terms">{f("terms")}</Link>
+            </li>
+            <li className="mt-2">
+              <Link className="text-blue-500 hover:underline" href="/contact">{f("contact")}</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
           <p className="mb-6 font-bold">{f("FrendlyLinks")}</p>
           <ul className="mb-4">
             <li className="mt-2">
-              <Link href="https://www.memora.top" target="_blank">Memora</Link>
+              <Link className="text-blue-500 hover:underline" href="https://www.memora.top" target="_blank">Memora</Link>
             </li>
             <li className="mt-2">
-              <Link href="https://www.crazykids.tech" target="_blank">CrazyKids</Link>
+              <Link className="text-blue-500 hover:underline" href="https://www.crazykids.tech" target="_blank">CrazyKids</Link>
             </li>
           </ul>
         </div>
@@ -47,11 +61,6 @@ export default function Footer() {
         <p className="text-sm text-gray-500 dark:text-gray-400">
           &copy; {new Date().getFullYear()} {f("copyright")}
         </p>
-        <span className="mx-2">|</span>
-        <nav className="flex gap-4 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="/privacy">{f("privacy")}</Link>
-          <Link href="/terms">{f("terms")}</Link>
-        </nav>
       </div>
     </footer>
   )
